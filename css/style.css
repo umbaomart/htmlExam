@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/3b2646a48566403a55f62ceddbecbe18?family=Hiragino+Sans+GB);
 * {
   margin: 0;
   padding: 0;
@@ -21,18 +22,18 @@ h2 {
 
 p {
   font-size: 16px;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 
 .sections {
   margin: auto;
-  max-width: 1250px;
+  max-width: 1200px;
   background: #fff;
 }
 
 .container {
   padding-top: 100px;
-  padding-bottom: 93px;
+  padding-bottom: 95px;
 }
 
 .container .row-wrapper:first-child {
@@ -41,7 +42,7 @@ p {
 
 .container .row-wrapper .section-content {
   margin: auto;
-  width: 1040px;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,8 +55,8 @@ p {
           align-items: flex-start;
 }
 
-.container .row-wrapper .section-content .content-img {
-  height: 253px;
+.container .row-wrapper .section-content img.content-img {
+  height: 240px;
   width: auto;
 }
 
@@ -64,7 +65,7 @@ p {
 }
 
 .container .row-wrapper .section-content .content h2 {
-  margin-top: -6px;
+  margin-top: -4px;
   padding-bottom: 5px;
 }
 
@@ -94,19 +95,20 @@ p {
   padding-bottom: 11px;
 }
 
-.section-dark {
+.section-darker {
   background: #222222;
   width: 100%;
 }
 
-.section-dark .container {
+.section-darker .section-three {
+  text-align: center;
   color: #fff;
   margin: auto;
-  width: 1040px;
+  width: 1000px;
 }
 
-.section-dark .container .section-content-center h2 {
-  padding-bottom: 3px;
+.section-darker .section-three .section-content-center h2.heading {
+  padding-bottom: 6px;
 }
 
 .section-four {
@@ -115,12 +117,12 @@ p {
 }
 
 .section-four h1 {
-  padding-bottom: 52px;
+  padding-bottom: 55px;
 }
 
 .section-four .section-content-center img {
   width: 438px;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
 .section-four p.small {
@@ -130,9 +132,13 @@ p {
 
 .section-five {
   padding-top: 80px;
-  padding-bottom: 147px;
+  padding-bottom: 145px;
   margin: auto;
-  width: 1040px;
+  width: 1000px;
+}
+
+.section-five h1 {
+  padding-bottom: 55px;
 }
 
 .section-five .section-content-cards {
@@ -152,14 +158,14 @@ p {
 
 .section-five .section-content-cards .card {
   text-align: center;
-  width: 315px;
+  width: inherit;
 }
 
 .section-five .section-content-cards .card img.card-img {
-  height: 315px;
-  width: 315px;
+  height: 300px;
+  width: 300px;
   height: inherit;
-  margin-bottom: 6px;
+  margin-bottom: 13px;
 }
 
 footer {
@@ -168,7 +174,7 @@ footer {
   width: 100%;
   background: url(../images/employees.jpg);
   background-size: cover;
-  background-position-y: 55%;
+  background-position-y: 48%;
 }
 
 @media (max-width: 1080px) {
@@ -191,11 +197,6 @@ footer {
   }
   #section-content {
     width: 95%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   #section-content .content {
     padding: 0px;
@@ -208,7 +209,7 @@ footer {
     padding-bottom: 25px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   p {
     font-size: 14px;
@@ -243,9 +244,13 @@ footer {
   }
   .section-four {
     padding-bottom: 0px;
+    width: 100%;
   }
   .section-four h1 {
     padding-bottom: 21px;
+  }
+  .section-four .section-content-center {
+    width: 100%;
   }
   .section-four .section-content-center h2.heading {
     padding-bottom: 7px;
@@ -286,6 +291,19 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #container {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

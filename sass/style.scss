@@ -1,0 +1,270 @@
+@import url(//db.onlinewebfonts.com/c/3b2646a48566403a55f62ceddbecbe18?family=Hiragino+Sans+GB);
+* {
+    margin: 0;       
+    padding: 0;
+    font-family: Hiragino Sans GB, sans-serif;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+h1, h2, h3, p {
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.8rem;
+}
+.sections {
+    margin: auto;
+    max-width: 1200px;
+    background: #fff;
+}
+.container {
+    padding-top: 100px;
+    padding-bottom: 95px;
+    .row-wrapper {
+        &:first-child {
+            padding-bottom: 82px;
+        }
+        .section-content {
+            margin: auto;
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            img.content-img {
+                height: 240px;
+                width: auto;
+            }
+            .content {
+                padding-left: 40px;
+                h2 {
+                    margin-top: -4px;
+                    padding-bottom: 5px;
+                }
+            }
+
+        }
+        .content-reverse {
+            flex-direction: row-reverse;
+            .content {
+                padding-left: 0px;
+                padding-right: 40px;
+            }
+        }
+    }
+}
+.section-three, .section-four {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    text-align: center;
+    h1 {
+        padding-bottom: 45px;
+    }
+    .section-content-center h2 {
+        padding-bottom: 11px;
+    }
+}
+.section-darker {
+    background: #222222;
+    width: 100%;
+    .section-three {
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        width: 1000px;
+        .section-content-center h2.heading {
+            padding-bottom: 6px;
+        }
+    }
+}
+.section-four {
+    padding-bottom: 0px;
+    margin: auto;
+    h1 {
+        padding-bottom: 55px;
+    }
+    .section-content-center img {
+        width: 438px;
+        padding-bottom: 5px;
+    }
+    p.small {
+        font-size: 12px;
+        color: #333333;
+    }
+}
+.section-five {
+    padding-top: 80px;
+    padding-bottom: 145px;
+    margin: auto;
+    width: 1000px;
+    h1 {
+        padding-bottom: 55px;
+    }
+    .section-content-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+            text-align: center;
+            width: inherit;
+            img.card-img {
+                height: 300px;
+                width: 300px;
+                height: inherit;
+                margin-bottom: 13px;
+            }
+        }
+    }
+}
+footer {
+    margin: auto;
+    height: 417px;
+    width: 100%;
+    background: url(../images/employees.jpg);
+    background-size: cover;
+    background-position-y: 48%;
+}
+@media (max-width: 1080px) {
+    #container {
+        width: 95%;
+    }
+    #group-cards { 
+        justify-content: space-around;
+    }
+    #section-content {
+        width: 95%;
+    }
+}
+// just ingore this
+@media (max-width: 970px) {
+    #group-cards { 
+        justify-content: space-around;
+    }
+    #section-content {
+        width: 95%;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        .content {
+            padding: 0px;
+        }
+    }
+}   // end of ignore this..
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.6rem;
+    }
+    .container {
+        padding-top: 52px;
+        padding-bottom: 52px;
+
+        .row-wrapper {
+            &:first-child {
+                padding-bottom: 41px;
+            }
+            h1 {
+                padding-bottom: 21px;
+            }
+            .section-content img.content-img {
+                width: 100%;
+                height: auto;
+            }
+            .content {
+                h2 {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    .section-three {
+        padding-top: 35px;
+        padding-bottom: 32px;
+        h1 {
+            padding-bottom: 15px;
+        }
+        .section-content-center {
+            h2.heading {
+               padding-bottom: 7px; 
+            }
+        }
+    }
+    .section-four {
+        padding-bottom: 0px;
+        width: 100%;
+        h1 {
+            padding-bottom: 21px;
+        }
+        .section-content-center {
+            width: 100%;
+            h2.heading {
+                padding-bottom: 7px; 
+            }
+            img {
+                padding-bottom: 2px;
+                width: 100%;
+            }
+            p {
+                font-size: 10px;
+                margin-bottom: -5px;
+            }
+        }
+    }
+    .section-five {
+        padding-bottom: 30px;
+        h1 {
+            padding-bottom: 22px;
+        }
+        .section-content-cards {
+            .card {
+                img.card-img {
+                    margin-bottom: 2px;
+                    width: 280px;
+                    height: 280px;
+                }
+                h2 {
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+    footer {
+        height: 240px;
+        background-position: center;
+        background-size: 150%;
+        background-repeat: no-repeat;
+
+    }
+    #section-content {
+        flex-direction: column;
+        align-items: center;
+        flex: wrap;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    #container {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
